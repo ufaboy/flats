@@ -2,7 +2,7 @@
   <div id="app" class="app">
     <header class="header"></header>
     <main class="main">
-      <flat-component v-for="flat of flatsArray" :key="flat.id" />
+      <flat-component v-for="flat of flatsArray" :key="flat.id" :flat="flat" />
     </main>
     <footer class="footer"></footer>
   </div>

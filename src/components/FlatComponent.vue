@@ -5,14 +5,10 @@
            style="background-image: url(&quot;http://bosscode.monoame.com/20170323_vue_comp/img/room%20(1).jpg&quot;); background-color: rgb(85, 85, 85);">
       </div>
       <div class="info">
-        <h5>Economy Double Room<span class="icons"><!----><i class="fa fa-bathtub"></i><i
-            class="fa fa-coffee"></i></span>
-        </h5>
-        <h5><span>0.9*0.9</span><span>=</span><span>81 折</span>
-        </h5>
-        <h4>TWD
-          <s>7000</s><span class="final_price">5870$</span>
-        </h4>
+        <span class="title">{{flat.attributes.title}}</span>
+        <span class="square">{{flat.attributes.area}}</span>
+        <span class="square">{{flat.attributes.address}}</span>
+
       </div>
     </div>
   </div>
@@ -22,18 +18,28 @@
 export default {
   name: "FlatComponent",
   components: {},
-  props: {},
+  props: {
+    flat: Object
+  },
   data: () => ({}),
-  computed: {},
+  computed: {
+
+  },
   watch: {},
   created() {
   },
   mounted() {
   },
-  methods: {},
+  methods: {
+    calcAddress() {
+      return `${this.flat.attributes.address}`
+    }
+  },
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.flat-wrapper {
 
+}
 </style>
