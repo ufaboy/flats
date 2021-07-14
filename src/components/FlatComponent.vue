@@ -10,7 +10,7 @@
         <h4 class="title">{{ flat.attributes.title }}</h4>
         <div class="square">Площадь: {{ flat.attributes.area }} {{ flat.attributes.unit }}</div>
         <div class="rooms">Комнат: {{ flat.attributes.rooms ? flat.attributes.rooms : 'Не указано' }}</div>
-        <div class="address">{{ calcAddress() }}</div>
+        <div class="address">Адрес: {{ calcAddress() }}</div>
         <div class="persons">
           <p>{{ calcPerson(flat.relationships) }}</p>
         </div>
@@ -44,7 +44,7 @@ export default {
     calcAddress() {
       if (this.flat?.attributes?.address) {
         const {city, street, house, room} = this.flat.attributes.address
-        return `${city}, ${street}, ${house}, ${room}`
+        return `${city}, ${street} ${house}, кв ${room ? room : 'Не указано'}`
       }
       return 'Не указано'
     },
