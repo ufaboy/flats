@@ -7,7 +7,9 @@
           :key="flat.id" :flat="flat"
           @toggle-like="toggleLikeOnFlat(index)" />
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <a href="https://github.com/ufaboy/flats" class="link">Ссылка на проект</a>
+    </footer>
   </div>
 </template>
 
@@ -80,6 +82,13 @@ input {
   }
   .flat-wrapper {
     margin: 0 1rem 1rem 0;
+  }
+  .footer {
+    .link {
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
   }
 }
 @media only screen and (max-width: 690px) {
