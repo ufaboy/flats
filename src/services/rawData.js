@@ -13,7 +13,8 @@ export default {
                 "room": "123"
             },
             "area": 134,
-            "unit": "квм"
+            "unit": "квм",
+          "img": "./img/flat_1.png"
         },
         "relationships": {
             "type": "agent",
@@ -38,7 +39,8 @@ export default {
                 "room": "45"
             },
             "area": 34,
-            "unit": "квм"
+            "unit": "квм",
+          "img": "./img/flat_2.png"
         },
         "relationships": {
             "type": "agent",
@@ -63,7 +65,8 @@ export default {
                 "room": "24"
             },
             "area": 134,
-            "unit": "квм"
+            "unit": "квм",
+          "img": "./img/flat_3.png"
         },
         "relationships": {
             "type": "agent",

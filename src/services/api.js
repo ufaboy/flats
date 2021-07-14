@@ -10,5 +10,6 @@ export default async function getData(url) {
     //     }
     // });
     // return await response.json();
+  await new Promise((resolve) => setTimeout(resolve, 300));
     return rawData
 }
